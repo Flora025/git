@@ -40,3 +40,10 @@ Help:
 3. 把变化添加到版本库：
    git commit -m "remove xxx"
 
+
+【远程库】
+1. 关联一个远程库: git remote add origin git@github.com:username/repo-name.git
+2. 第一次推送master分支的所有内容：
+   git push -u origin master
+3. 推送最新修改：
+   git push origin master
