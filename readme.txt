@@ -50,3 +50,27 @@ Help:
 
 【远程->本地】
 git clone git@github.com:username/repo-name.git
+
+【分支-basics】*encouraged
+1. 查看分支：git branch
+2. 创建分支：git branch <name>
+3. 切换分支：git checkout <name>或git switch <name>
+4. 创建+切换分支：git checkout -b <name>或git switch -c <name>
+5. 合并某分支到当前分支：
+   git merge <name> 
+   或 
+   git merge --no-ff -m "merge with no-ff" dev （禁用Fast forward模式：保留分支信息）
+6. 删除分支：git branch -d <name>
+
+【分支-conflict】
+1. 查看filename的内容：
+   cat filename.x
+   查看分支合并图：
+   git log --graph --pretty=oneline --abbrev-commit
+2. 解决conflict后addcommit
+
+【分支-bug】https://www.liaoxuefeng.com/wiki/896043488029600/900388704535136
+git stash
+git stash pop
+git cherry-pick <commit>
+
